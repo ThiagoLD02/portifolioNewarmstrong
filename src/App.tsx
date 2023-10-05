@@ -1,12 +1,14 @@
 import "./App.css";
 import { Header } from "./components/header";
-import { QuemSomosNos } from "./components/quemSomosNos";
+import { Membros } from "./pages/membros";
+import { QuemSomosNos } from "./pages/quemSomosNos";
 
 function App() {
   return (
     <div className="flex flex-col">
       <Header />
-      <QuemSomosNos />
+      <Membros />
+      {/* <QuemSomosNos /> */}
     </div>
   );
 }
