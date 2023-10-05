@@ -5,21 +5,34 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
     <div className="flex justify-between bg-azulEscuro text-white h-16 w-screen items-center">
-      <a className="justify-items-start ml-8 cursor-pointer hover:opacity-70">
+      <Link
+        to="/"
+        className="justify-items-start ml-8 cursor-pointer hover:opacity-70"
+      >
         NewArmStrong
-      </a>
+      </Link>
       <div className="hidden xl:flex xl:z-10 justify-between mr-8">
         <div className="flex justify-between gap-6">
-          <a className="cursor-pointer hover:opacity-70">Quem somos nós</a>
-          <a className="cursor-pointer hover:opacity-70">Membros</a>
-          <a className="cursor-pointer hover:opacity-70">Contato</a>
-          <a className="cursor-pointer hover:opacity-70">
+          <nav>
+            <Link to="/" className="cursor-pointer hover:opacity-70">
+              Quem somos nós
+            </Link>
+          </nav>
+
+          <Link to="/membros" className="cursor-pointer hover:opacity-70">
+            Membros
+          </Link>
+          <Link to="/contato" className="cursor-pointer hover:opacity-70">
+            Contato
+          </Link>
+          <Link to="/ps" className="cursor-pointer hover:opacity-70">
             Processo Seletivo 2023.2
-          </a>
+          </Link>
           <a
             href="https://www.instagram.com/equipenewarmstrong/"
             target="_blank"

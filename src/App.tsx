@@ -1,15 +1,16 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 import { Header } from "./components/header";
-import { Membros } from "./pages/membros";
-import { QuemSomosNos } from "./pages/quemSomosNos";
+import { MyRoutes } from "./routes";
 
 function App() {
   return (
-    <div className="flex flex-col">
-      <Header />
-      <Membros />
-      {/* <QuemSomosNos /> */}
-    </div>
+    <BrowserRouter>
+      <div className="flex flex-col">
+        <Header />
+        <MyRoutes />
+      </div>
+    </BrowserRouter>
   );
 }
 
