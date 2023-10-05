@@ -5,6 +5,7 @@ import { cardProps } from "../components/card";
 export function Membros() {
   const data: cardProps[] = [
     {
+      id: "edewell1",
       name: "Lulu",
       email: "n",
       linkedin: "n",
@@ -12,6 +13,7 @@ export function Membros() {
       positon: "Diretor de Eletrônica",
     },
     {
+      id: "edewell2",
       name: "Lulu",
       email: "n",
       linkedin: "n",
@@ -19,6 +21,7 @@ export function Membros() {
       positon: "Diretor de Eletrônica",
     },
     {
+      id: "edewell3",
       name: "Lulu",
       email: "n",
       linkedin: "n",

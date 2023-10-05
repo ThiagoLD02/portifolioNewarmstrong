@@ -12,11 +12,13 @@ export function AreaDosMembros({ title, style, data }: membersAreaProps) {
       <div className="flex flex-wrap justify-center gap-16">
         {data.map((card) => (
           <Card
+            id={card.id}
             name={card.name}
             email={card.email}
             linkedin={card.linkedin}
             picture={card.picture}
             positon={card.positon}
+            key={card.id}
           />
         ))}
       </div>

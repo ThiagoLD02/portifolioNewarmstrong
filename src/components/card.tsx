@@ -1,6 +1,7 @@
 import { Linkedin, Mail } from "lucide-react";
 
 export interface cardProps {
+  id: string;
   picture: string;
   name: string;
   positon: string;
