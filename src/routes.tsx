@@ -1,9 +1,8 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Membros } from "./pages/membros";
-import { QuemSomosNos } from "./pages/quemSomosNos";
 import { Contato } from "./pages/contato";
+import { Membros } from "./pages/membros";
 import { PS } from "./pages/ps";
+import { QuemSomosNos } from "./pages/quemSomosNos";
 
 export function MyRoutes() {
   return (

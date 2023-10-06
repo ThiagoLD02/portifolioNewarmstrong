@@ -1,5 +1,5 @@
-import newarmstrongLogo from "../assets/newarmstrong-logo-1076x605.png";
 import equipe from "../assets/equipe-new-2023-1036x691.jpeg";
+import newarmstrongLogo from "../assets/newarmstrong-logo-1076x605.png";
 
 export function QuemSomosNos() {
   return (
