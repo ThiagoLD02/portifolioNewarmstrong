@@ -2,7 +2,6 @@ import { Instagram, Linkedin, Mail, Menu } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Link } from "react-router-dom";
@@ -18,11 +17,9 @@ export function Header() {
       </Link>
       <div className="hidden xl:flex xl:z-10 justify-between mr-8">
         <div className="flex justify-between gap-6">
-          <nav>
-            <Link to="/" className="cursor-pointer hover:opacity-70">
-              Quem somos nós
-            </Link>
-          </nav>
+          <Link to="/" className="cursor-pointer hover:opacity-70">
+            Quem somos nós
+          </Link>
 
           <Link to="/membros" className="cursor-pointer hover:opacity-70">
             Membros
@@ -62,10 +59,10 @@ export function Header() {
             <Menu />
           </DropdownMenuTrigger>
           <DropdownMenuContent className="bg-azulEscuro text-white border-none w-screen rounded-none flex flex-col items-center">
-            <DropdownMenuItem>Quem somos nós</DropdownMenuItem>
-            <DropdownMenuItem>Membros</DropdownMenuItem>
-            <DropdownMenuItem>Contato</DropdownMenuItem>
-            <DropdownMenuItem>Processo Seletivo 2023.2</DropdownMenuItem>
+            <Link to="/">Quem somos nós</Link>
+            <Link to="/membros">Membros</Link>
+            <Link to="/contato">Contato</Link>
+            <Link to="/ps">Processo Seletivo 2023.2</Link>
             <div className="flex gap-2">
               <a
                 href="https://www.instagram.com/equipenewarmstrong/"
