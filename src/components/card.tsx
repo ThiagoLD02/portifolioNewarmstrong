@@ -13,9 +13,9 @@ export function Card(props: cardProps) {
   return (
     <div className="flex flex-col justify-center text-center gap-2">
       <img
-        className="max-w-sm xl:max-w-lg"
         src={props.picture}
         alt="Foto do membro"
+        className="w-auto h-auto max-w-sm aspect-square"
       />
       <h2 className="font-bold text-2xl">{props.name}</h2>
       <h3 className="font-bold text-lg">{props.positon}</h3>
