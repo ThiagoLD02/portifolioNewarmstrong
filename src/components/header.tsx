@@ -13,22 +13,22 @@ export function Header() {
         to="/"
         className="justify-items-start ml-8 cursor-pointer hover:opacity-70"
       >
-        NewArmStrong
+        <strong>NewArmStrong</strong>
       </Link>
       <div className="hidden xl:flex xl:z-10 justify-between mr-8">
         <div className="flex justify-between gap-6">
           <Link to="/quemSomosNos" className="cursor-pointer hover:opacity-70">
-            Quem somos nós
+            <strong>Quem somos nós</strong>
           </Link>
 
           <Link to="/membros" className="cursor-pointer hover:opacity-70">
-            Membros
+            <strong>Membros</strong>
           </Link>
           <Link to="/contato" className="cursor-pointer hover:opacity-70">
-            Contato
+            <strong>Contato</strong>
           </Link>
           <Link to="/ps" className="cursor-pointer hover:opacity-70">
-            Processo Seletivo 2023.2
+            <strong>Processo Seletivo 2023.2</strong>
           </Link>
           <a
             href="https://www.instagram.com/equipenewarmstrong/"
@@ -58,12 +58,12 @@ export function Header() {
           <DropdownMenuTrigger>
             <Menu />
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="bg-azulEscuro text-white border-none w-screen rounded-none flex flex-col items-center">
+          <DropdownMenuContent className="bg-azulEscuro text-white border-none w-screen rounded-none flex flex-col items-center gap-3 mt-3">
             <Link to="/">Quem somos nós</Link>
             <Link to="/membros">Membros</Link>
             <Link to="/contato">Contato</Link>
             <Link to="/ps">Processo Seletivo 2023.2</Link>
-            <div className="flex gap-2">
+            <div className="flex gap-5">
               <a
                 href="https://www.instagram.com/equipenewarmstrong/"
                 target="_blank"
