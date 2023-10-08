@@ -1,7 +1,11 @@
 import { Instagram, Linkedin, Mail } from "lucide-react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export function Contato() {
+  useEffect(() => {
+    document.title = "Contato";
+  }, []);
   return (
     <div className="flex flex-col w-11/12 xl:w-3/4 text-center m-auto ">
       <h1 className="text-4xl lg:text-6xl text-azulEscuro mt-10">

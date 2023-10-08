@@ -1,8 +1,12 @@
-import { AreaDosMembros } from "../components/areaDosMembros";
+import { useEffect } from "react";
 import pictureLuan from "../assets/Luan Fozza.jpg";
+import { AreaDosMembros } from "../components/areaDosMembros";
 import { cardProps } from "../components/card";
 
 export function Membros() {
+  useEffect(() => {
+    document.title = "Membros";
+  }, []);
   const data: cardProps[] = [
     {
       id: "edewell1",

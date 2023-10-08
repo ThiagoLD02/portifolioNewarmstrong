@@ -1,8 +1,12 @@
 import { ArquivoParaDownload } from "@/components/arquivoParaDownload";
 import { EtapaPs } from "@/components/etapaPs";
 import { FileEdit, Files } from "lucide-react";
+import { useEffect } from "react";
 
 export function PS() {
+  useEffect(() => {
+    document.title = "Processo seletivo";
+  }, []);
   const data = {
     etapas: [
       {
