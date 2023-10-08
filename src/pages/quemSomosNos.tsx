@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import a from "../assets/background1.jpg";
+import backgroundImg from "../assets/background1.jpg";
 import equipe from "../assets/equipe-new-2023-1036x691.jpeg";
 import newarmstrongLogo from "../assets/newarmstrong-logo-1076x605.png";
 
@@ -44,7 +44,7 @@ export function QuemSomosNos() {
       </div>
       <div
         style={{
-          backgroundImage: `url(${a})`,
+          backgroundImage: `url(${backgroundImg})`,
         }}
         className="w-full mt-6 text-white h-[500px] mb-48 bg-cover bg-no-repeat"
       >
