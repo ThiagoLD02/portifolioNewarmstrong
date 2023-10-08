@@ -1,9 +1,9 @@
-import { Instagram, Linkedin, Mail, Menu } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Instagram, Linkedin, Mail, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function Header() {
@@ -17,7 +17,7 @@ export function Header() {
       </Link>
       <div className="hidden xl:flex xl:z-10 justify-between mr-8">
         <div className="flex justify-between gap-6">
-          <Link to="/" className="cursor-pointer hover:opacity-70">
+          <Link to="/quemSomosNos" className="cursor-pointer hover:opacity-70">
             Quem somos nós
           </Link>
 
